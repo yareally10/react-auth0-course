@@ -18,3 +18,7 @@ REACT_APP_AUTH0_CALLBACK_URL=http://localhost:3000/callback
 npm install
 npm start
 ```
+
+# Course Notes
+
+Use [this gist](https://gist.github.com/coryhouse/cec91ea33f950dfdf7b76569f9f7a239) to get latest packages and explanation of dependencies.
