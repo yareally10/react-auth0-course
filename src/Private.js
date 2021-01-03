@@ -13,7 +13,9 @@ class Private extends Component {
     })
       .then((response) => {
         if (response.ok) return response.json();
-        throw new Error("Network response was not ok.");
+        throw new Error(
+          `Network response was not ok. Status: ${response.status} Text: ${response.statusText}`
+        );
       })
       .then((response) => this.setState({ message: response.message }))
       .catch((error) => this.setState({ message: error.message }));
